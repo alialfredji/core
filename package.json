@@ -1,7 +1,7 @@
 {
   "name": "@forrestjs/core",
   "version": "0.0.1",
-  "description": "Server Side Rendering for CRA 2.x (with redux, router, code splitting, ...)",
+  "description": "SSR utilities for CRA2.x",
   "main": "index.js",
   "scripts": {
     "go": "npm run build && npm publish --access public .",
