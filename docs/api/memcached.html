@@ -1,0 +1,877 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Memcached · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../howto/setup.html" />
+    
+    
+    <link rel="prev" href="create-ssr-router.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://github.com/marcopeg/react-ssr">
+            
+                    
+                    give us a star on GitHub!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://www.npmjs.com/package/@marcopeg/react-ssr">
+            
+                    
+                    install from NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="create-ssr-state.html">
+            
+                <a href="create-ssr-state.html">
+            
+                    
+                    createSSRState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="create-ssr-context.html">
+            
+                <a href="create-ssr-context.html">
+            
+                    
+                    createSSRContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="create-ssr-render.html">
+            
+                <a href="create-ssr-render.html">
+            
+                    
+                    createSSRRender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="create-ssr-router.html">
+            
+                <a href="create-ssr-router.html">
+            
+                    
+                    createSSRRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="memcached.html">
+            
+                <a href="memcached.html">
+            
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Step By Step Tutorial</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../howto/setup.html">
+            
+                <a href="../howto/setup.html">
+            
+                    
+                    Prerequisites & Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../howto/app.html">
+            
+                <a href="../howto/app.html">
+            
+                    
+                    Universal App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../howto/app-redux.html">
+            
+                <a href="../howto/app-redux.html">
+            
+                    
+                    React Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../howto/app-reducers.html">
+            
+                <a href="../howto/app-reducers.html">
+            
+                    
+                    Reducers & Initial State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../howto/features.html">
+            
+                <a href="../howto/features.html">
+            
+                    
+                    Think in Features
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="../howto/features-users.html">
+            
+                <a href="../howto/features-users.html">
+            
+                    
+                    users feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.2" data-path="../howto/features-splash.html">
+            
+                <a href="../howto/features-splash.html">
+            
+                    
+                    splash-screen feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../howto/ssr.html">
+            
+                <a href="../howto/ssr.html">
+            
+                    
+                    Server Side Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../howto/ssr-folders.html">
+            
+                <a href="../howto/ssr-folders.html">
+            
+                    
+                    Folders structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../howto/ssr-babel.html">
+            
+                <a href="../howto/ssr-babel.html">
+            
+                    
+                    Babel setup (transpiler)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../howto/ssr-npm-dependencies.html">
+            
+                <a href="../howto/ssr-npm-dependencies.html">
+            
+                    
+                    NPM dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../howto/ssr-npm-scripts.html">
+            
+                <a href="../howto/ssr-npm-scripts.html">
+            
+                    
+                    NPM scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../howto/ssr-frontend.html">
+            
+                <a href="../howto/ssr-frontend.html">
+            
+                    
+                    the frontend script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../howto/ssr-backend.html">
+            
+                <a href="../howto/ssr-backend.html">
+            
+                    
+                    the backend script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../howto/ssr-kickoff.html">
+            
+                <a href="../howto/ssr-kickoff.html">
+            
+                    
+                    the kickoff scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../howto/ssr-code-splitting.html">
+            
+                <a href="../howto/ssr-code-splitting.html">
+            
+                    
+                    code splitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../howto/docker.html">
+            
+                <a href="../howto/docker.html">
+            
+                    
+                    Deploy with Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../howto/router.html">
+            
+                <a href="../howto/router.html">
+            
+                    
+                    Add React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../howto/router-setup.html">
+            
+                <a href="../howto/router-setup.html">
+            
+                    
+                    basic setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../howto/router-routes.html">
+            
+                <a href="../howto/router-routes.html">
+            
+                    
+                    add some routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../howto/router-load.html">
+            
+                <a href="../howto/router-load.html">
+            
+                    
+                    load stuff
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../howto/seo.html">
+            
+                <a href="../howto/seo.html">
+            
+                    
+                    SEO Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../howto/eslint.html">
+            
+                <a href="../howto/eslint.html">
+            
+                    
+                    Customize ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../howto/graphql.html">
+            
+                <a href="../howto/graphql.html">
+            
+                    
+                    Add GraphQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../howto/graphql-setup.html">
+            
+                <a href="../howto/graphql-setup.html">
+            
+                    
+                    setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="../howto/graphql-backend.html">
+            
+                <a href="../howto/graphql-backend.html">
+            
+                    
+                    backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="../howto/graphql-frontend.html">
+            
+                <a href="../howto/graphql-frontend.html">
+            
+                    
+                    frontend
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../howto/multilanguage.html">
+            
+                <a href="../howto/multilanguage.html">
+            
+                    
+                    Add Multilanguage Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Articles</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../articles/reducers.html">
+            
+                <a href="../articles/reducers.html">
+            
+                    
+                    Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../articles/services.html">
+            
+                <a href="../articles/services.html">
+            
+                    
+                    Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../articles/styled-components.html">
+            
+                <a href="../articles/styled-components.html">
+            
+                    
+                    SSR with Styled Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Other Stuff</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../DEVELOPMENT.html">
+            
+                <a href="../DEVELOPMENT.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Memcached</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="memcached">Memcached</h1>
+<p><code>react-ssr</code> offers a basic in-memory caching mechanism that you can heavily
+customize to suit your need.</p>
+<p>As an example, you can store the cache in a Redis instance and share it across
+<strong>multiple stateless service instances</strong>, or you can fine tune the cache key in
+order to <strong>support authenticated sessions</strong>.</p>
+<p>The cache system can be configured by passing the following properties to 
+the <code>createSSRRouter()</code> method.</p>
+<h3 id="usecache">useCache</h3>
+<pre><code>value:     (string) [yes|no]
+default:   &apos;yes&apos;
+env:       REACT_SSR_USE_CACHE
+</code></pre><p>Enable the basic in-memory cache layer.</p>
+<h3 id="shouldcachereq-res">shouldCache(req, res)</h3>
+<pre><code>value:     (function) can be async
+default:   null
+</code></pre><p>Example:<br>skip caching for routes that contains &quot;/foo&quot;</p>
+<pre><code>...
+shouldCache: (req, res) =&gt; req.url.indexOf(&apos;/foo&apos;) === -1
+...
+</code></pre><h3 id="getcachekeyreq-res">getCacheKey(req, res)</h3>
+<p>Synchronous function that should return a unique cache key.</p>
+<p>By default <code>req.url</code> is being used. If you hook into this function you can use
+some other request properties to make the key unique to a specific session.</p>
+<p>NOTE: a cache key is an object with a <code>value</code> property!</p>
+<pre><code>getCacheKey: (req) =&gt; ({
+    value: [
+        req.url,
+        req.locale.language,
+        req.locale.region,
+    ],
+})
+</code></pre><h3 id="getcacheexpiryreq-res">getCacheExpiry(req, res)</h3>
+<p>Synchronous function that should return a timestamp after which the cache entry
+is not valid anymore.</p>
+<h3 id="oncachewritesreq-res-html">onCacheWrites(req, res, html)</h3>
+<p>Synchronous function that can transform the HTML before it gets stored in the cache.<br>It should return the transformed HTML as a string.</p>
+<h3 id="oncachereadreq-res-cache">onCacheRead(req, res, cache)</h3>
+<p>Synchronous function that receives a valid cache entry and should return the HTML
+to send back to the client.</p>
+<pre><code>cache = {
+    cnt,    // cache content as string
+    exp,    // expiry date as timestamp
+    ctm,    // creation timestamp
+}
+</code></pre><h3 id="serializer">serializer</h3>
+<p>A serializer is an object that implements the following asynchronous methods:</p>
+<pre><code>serializer = {
+    set: async (key, cacheObject) =&gt; {},
+    get: async (key) =&gt; {},
+    remove: async([key1, key2, ...]) =&gt; {},
+}
+</code></pre><p>You may want to provide a serializer if you need to move the cache layer outside the main
+process memory and target a database or a redis instance.</p>
+<pre><code>cacheObject = {
+    cnt,    // cache content as string
+    exp,    // expiry date as timestamp
+    ctm,    // creation timestamp
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="create-ssr-router.html" class="navigation navigation-prev " aria-label="Previous page: createSSRRouter">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../howto/setup.html" class="navigation navigation-next " aria-label="Next page: Prerequisites & Setup">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Memcached","level":"1.4.5","depth":2,"next":{"title":"Prerequisites & Setup","level":"2.1","depth":1,"path":"howto/setup.md","ref":"./howto/setup.md","articles":[]},"previous":{"title":"createSSRRouter","level":"1.4.4","depth":2,"path":"api/create-ssr-router.md","ref":"./api/create-ssr-router.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","collapsible-menu"],"pluginsConfig":{"code":{"copyButtons":true},"collapsible-menu":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"api/memcached.md","mtime":"2019-05-08T14:03:16.208Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-13T14:15:22.454Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,998 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Reducers · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="services.html" />
+    
+    
+    <link rel="prev" href="../howto/multilanguage.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://github.com/marcopeg/react-ssr">
+            
+                    
+                    give us a star on GitHub!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://www.npmjs.com/package/@marcopeg/react-ssr">
+            
+                    
+                    install from NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../api/create-ssr-state.html">
+            
+                <a href="../api/create-ssr-state.html">
+            
+                    
+                    createSSRState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../api/create-ssr-context.html">
+            
+                <a href="../api/create-ssr-context.html">
+            
+                    
+                    createSSRContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../api/create-ssr-render.html">
+            
+                <a href="../api/create-ssr-render.html">
+            
+                    
+                    createSSRRender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../api/create-ssr-router.html">
+            
+                <a href="../api/create-ssr-router.html">
+            
+                    
+                    createSSRRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../api/memcached.html">
+            
+                <a href="../api/memcached.html">
+            
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Step By Step Tutorial</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../howto/setup.html">
+            
+                <a href="../howto/setup.html">
+            
+                    
+                    Prerequisites & Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../howto/app.html">
+            
+                <a href="../howto/app.html">
+            
+                    
+                    Universal App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../howto/app-redux.html">
+            
+                <a href="../howto/app-redux.html">
+            
+                    
+                    React Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../howto/app-reducers.html">
+            
+                <a href="../howto/app-reducers.html">
+            
+                    
+                    Reducers & Initial State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../howto/features.html">
+            
+                <a href="../howto/features.html">
+            
+                    
+                    Think in Features
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="../howto/features-users.html">
+            
+                <a href="../howto/features-users.html">
+            
+                    
+                    users feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3.2" data-path="../howto/features-splash.html">
+            
+                <a href="../howto/features-splash.html">
+            
+                    
+                    splash-screen feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../howto/ssr.html">
+            
+                <a href="../howto/ssr.html">
+            
+                    
+                    Server Side Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="../howto/ssr-folders.html">
+            
+                <a href="../howto/ssr-folders.html">
+            
+                    
+                    Folders structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../howto/ssr-babel.html">
+            
+                <a href="../howto/ssr-babel.html">
+            
+                    
+                    Babel setup (transpiler)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="../howto/ssr-npm-dependencies.html">
+            
+                <a href="../howto/ssr-npm-dependencies.html">
+            
+                    
+                    NPM dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="../howto/ssr-npm-scripts.html">
+            
+                <a href="../howto/ssr-npm-scripts.html">
+            
+                    
+                    NPM scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="../howto/ssr-frontend.html">
+            
+                <a href="../howto/ssr-frontend.html">
+            
+                    
+                    the frontend script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="../howto/ssr-backend.html">
+            
+                <a href="../howto/ssr-backend.html">
+            
+                    
+                    the backend script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="../howto/ssr-kickoff.html">
+            
+                <a href="../howto/ssr-kickoff.html">
+            
+                    
+                    the kickoff scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="../howto/ssr-code-splitting.html">
+            
+                <a href="../howto/ssr-code-splitting.html">
+            
+                    
+                    code splitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../howto/docker.html">
+            
+                <a href="../howto/docker.html">
+            
+                    
+                    Deploy with Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../howto/router.html">
+            
+                <a href="../howto/router.html">
+            
+                    
+                    Add React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../howto/router-setup.html">
+            
+                <a href="../howto/router-setup.html">
+            
+                    
+                    basic setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="../howto/router-routes.html">
+            
+                <a href="../howto/router-routes.html">
+            
+                    
+                    add some routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="../howto/router-load.html">
+            
+                <a href="../howto/router-load.html">
+            
+                    
+                    load stuff
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../howto/seo.html">
+            
+                <a href="../howto/seo.html">
+            
+                    
+                    SEO Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../howto/eslint.html">
+            
+                <a href="../howto/eslint.html">
+            
+                    
+                    Customize ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="../howto/graphql.html">
+            
+                <a href="../howto/graphql.html">
+            
+                    
+                    Add GraphQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="../howto/graphql-setup.html">
+            
+                <a href="../howto/graphql-setup.html">
+            
+                    
+                    setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="../howto/graphql-backend.html">
+            
+                <a href="../howto/graphql-backend.html">
+            
+                    
+                    backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="../howto/graphql-frontend.html">
+            
+                <a href="../howto/graphql-frontend.html">
+            
+                    
+                    frontend
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="../howto/multilanguage.html">
+            
+                <a href="../howto/multilanguage.html">
+            
+                    
+                    Add Multilanguage Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Articles</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="reducers.html">
+            
+                <a href="reducers.html">
+            
+                    
+                    Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="services.html">
+            
+                <a href="services.html">
+            
+                    
+                    Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="styled-components.html">
+            
+                <a href="styled-components.html">
+            
+                    
+                    SSR with Styled Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Other Stuff</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../DEVELOPMENT.html">
+            
+                <a href="../DEVELOPMENT.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Reducers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="redux-reducers">Redux Reducers</h1>
+<p>Redux&apos;s documentation provides a very comprehensive definition of what a reducer is
+and how to structure it.
+<a href="https://redux.js.org/recipes/structuringreducers" target="_blank">You can read it here</a>.</p>
+<p>In this page I&apos;m going to <strong>propose a personal approach to reducers</strong> based on some years
+of practice (and endless fuckups and rewriting) developing React/Redux apps.</p>
+<h2 id="give-me-the-code">Give me the code</h2>
+<p>Without any further chit-chat here it is a possible implementation of a &quot;todos&quot; reducer:</p>
+<pre><code>/**
+ * Manifest
+ */
+
+const initialState = {
+    list: [],           // keeps a sorted list of my data
+    filter: null,       // allow filtering by &quot;category&quot;
+    filteredList: null, // cached list of items with a filter applied
+                        // avoid heavy re-rendering operations
+}
+
+// those actions are unlikely to be implemented by other reducers
+export const SET_ITEMS = &apos;setItems@todos&apos;
+export const SET_FILTER = &apos;setFilter@todos&apos;
+export const UNSET_FILTER = &apos;unsetFilter@todos&apos;
+
+// this is likely implemented by many other reducers as well
+export const CLEANUP = &apos;@LOGOUT&apos;
+
+/**
+ * Action Creators
+ */
+
+export const setItems = items =&gt; ({
+    type: SET_ITEMS,
+    payload: items,
+})
+
+export const setFilter = filter =&gt; ({
+    type: SET_FILTER,
+    payload: String(filter),
+})
+
+export const unsetFilter = () =&gt; ({
+    type: UNSET_FILTER,
+})
+
+/**
+ * Action Handlers
+ */
+
+// internal helper to compute derived state
+const getFilteredList = (items, filter) =&gt; filter
+    ? items.filter(item =&gt; item.category === filter)
+    : null
+
+export const actionHandlers = {
+    [CLEANUP]: () =&gt; ({ ...initialState }),
+    [SET_ITEMS]: (state, { payload }) =&gt; ({
+        ...state,
+        list: [ ...payload ],
+        filteredList: getFilteredList(payload, state.filter),
+    }),
+    [SET_FILTER]: (state, { payload }) =&gt; ({
+        ...state,
+        filter: payload,
+        filteredList: getFilteredList(state.items, payload),
+    }),
+    [UNSET_FILTER]: state =&gt; ({
+        ...state,
+        filter: null,
+        filteredList: null,
+    }),
+}
+
+/**
+ * Create the reducer function
+ */
+
+export default (state = initialState, action) =&gt; {
+    const handler = actionHandlers[action.type]
+    return handler ? handler(state, action) : state
+}
+</code></pre><p>I&apos;m quite sure you have mixed feelings about what you just read. It&apos;s ok, I had it too.</p>
+<p>For the rest of this article I&apos;m going to explain my point of view regarding some decisions
+that are implemented in the source code above.</p>
+<h2 id="es6---write-less-expressive-code">ES6 - Write less, expressive code</h2>
+<p>Does the code above look complicated to you? Yes? Great!</p>
+<p>In my experience is best for Reducer&apos;s code to follow those principles:</p>
+<ul>
+<li>it should be <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself" target="_blank"><em>DRY</em></a></li>
+<li>it should be boring</li>
+<li>it should be testable</li>
+</ul>
+<h4 id="dry-explained">DRY Explained:</h4>
+<p><a href="http://es6-features.org" target="_blank">ES6</a> comes with some great and expressive syntaxes that make
+a reducer source very very simple. Simple means &quot;with as less white noise as possible&quot;:</p>
+<ul>
+<li><a href="http://es6-features.org/#ExpressionBodies" target="_blank">arrow functions</a></li>
+<li><a href="http://es6-features.org/#DefaultParameterValues" target="_blank">default parameter</a></li>
+<li><a href="http://es6-features.org/#SpreadOperator" target="_blank">spread operator</a></li>
+<li><a href="http://es6-features.org/#PropertyShorthand" target="_blank">property shorthand</a></li>
+<li><a href="http://es6-features.org/#ComputedPropertyNames" target="_blank">computed property name</a></li>
+</ul>
+<p>Combine all of this, and you can get rid of the <code>switch</code> operator, plus you will unleash
+the simplicity of immutability applied to objects.</p>
+<h4 id="why-should-reducers-code-be-boring">Why should reducer&apos;s code be boring?</h4>
+<p>Come on, let&apos;s face the fact that actions/reducers solve an extremely well defined
+purpose of taking &quot;ObjectA&quot; and return &quot;NewObjectA&quot; with a different data in it.</p>
+<p>Reducers are supposed to <strong>implement pure functional data tranformation</strong> stuff.</p>
+<p><strong>They should not fail</strong> (there are no side effects in reducers) so there is very 
+little error handling to do.</p>
+<blockquote>
+<p>If something fail, is a bug to be fixed, not an exception to be handled!</p>
+</blockquote>
+<p>You are definetly not supposed to take smart decisions in a reducer&apos;s source code.
+(You are supposed to take smart decision when you architect your state shape, but this
+is a different discussion altogether!)</p>
+<h4 id="why-testing-the-obvious">Why testing the obvious?</h4>
+<p>If a reducer is so simple, why test it? </p>
+<p>I&apos;m glad you asked. Testing a reducer is like introducing 
+<a href="https://en.wikipedia.org/wiki/Multi-factor_authentication" target="_blank">MFA</a> for your state.</p>
+<p>When one day you wake up with a brilliant idea and start poking around your codebase
+randomly changing pieces of valuable logic, you will hear some screaming coming from
+your CI.</p>
+<p>At that point you will simply need to reflect a little longer on the changes that you
+are introducing. You will have 2 options:</p>
+<ul>
+<li><strong>Option n.1 -</strong> the change you are doing is not worth updating the 
+tests you already have.<br>Then you revert and go on with your life.</li>
+<li><strong>Option n.2 -</strong> it&apos;s worth it.<br>So you go ahead and take care of updating the tests that fail.</li>
+</ul>
+<blockquote>
+<p>Just promise me you will NOT simply <code>.skip()</code> the failing tests!</p>
+</blockquote>
+<h2 id="the-pareto-principle">The Pareto Principle</h2>
+<p><a href="https://en.wikipedia.org/wiki/Pareto_principle" target="_blank">The Pareto principle</a> (aka: the 80/20)
+applied to Redux&apos; reducers could be phrased as:</p>
+<blockquote>
+<p>80% of any app reducers solve a well scoped problem</p>
+</blockquote>
+<p>It&apos;s extremely likely that you write a <code>todos</code> reducers and a <code>users</code> reducers and both
+of them respond to actions that are non shared like <code>ADD_TODO</code> and <code>SET_USER_IMAGE</code>.</p>
+<p>Later on you might create an <code>auth</code> <strong>service</strong> which <code>logout()</code> action need to operate
+on both <code>todos</code> and <code>users</code> to clean up data that are of a user that just logged out.</p>
+<p>It&apos;s only at that point that both reducers will need to implement the <code>CLEANUP</code> action.</p>
+<p><strong>In conclusion, each reducer might end up with 5/6 dedicated actions
+and just 1 shared action.</strong></p>
+<p>That is enough for me to suggest 2 guidelines:</p>
+<ul>
+<li>keep your actions within your reducers</li>
+<li>it&apos;s kinda ok to use strings for the occasional shared actions.</li>
+</ul>
+<p>In the source code above you can clearly see a <strong>well structured manifest</strong> of all the
+reducer&apos;s capabilities. This manifest is exported in the form of 
+<a href="https://redux.js.org/basics/actions" target="_blank"><strong>action names</strong></a> and
+<a href="https://redux.js.org/basics/actions#action-creators" target="_blank"><strong>action creators</strong></a>.</p>
+<p>Because Redux&apos; action names are globals to the store, I use to suffex the &quot;local actions&quot;
+with the reducer&apos;s name, hence any action name is written with a simple format:</p>
+<pre><code>{actionName}@{reducerName}
+</code></pre><p>When it comes to shared actions, or global actions, I tend to follow Redux&apos; general pattern
+of expressing them as a capitalized word with an <code>@</code> in the beginning:</p>
+<pre><code>@{ACTION_NAME}
+</code></pre><p>This simple rule will make your life easy when investigating stuff in the Redux devTools.</p>
+<h2 id="compute-local-derived-state">Compute local derived state</h2>
+<p>Ever since we are young child we have been told that <em>Containers</em>  are a good place
+for merging pieces of state coming from different reducers, and compute derived state.</p>
+<p>If you want to be a nice kid, you can use <a href="https://github.com/reduxjs/reselect" target="_blank">reselect</a>
+to unleash the power of memoization and optimize the process.</p>
+<p>Right? Well... Waaait a minute...</p>
+<p>It turns out that most of the computed state that I&apos;ve ever come to work with is local
+to a single reducer.</p>
+<p>In the source code above we want to maintain the list of todo items and some kind of
+filter string that has the purpose to hide some items. It&apos;s a pattern that repeat a lot.</p>
+<p>If you think about it, I&apos;m sure you realize that your <code>ListView</code> component will render
+many many more times, and that to compute the filtered list each time is kinda waste
+of resources. <strong>You are definetly right</strong>.</p>
+<p>By using some simple local helper functions we can keep our source code DRY, and at the
+same time we can operate some simple <strong>derived state that will compute only when
+data change</strong>, not when the app re-render.</p>
+<p>Because your state might be responsible of handling a huge amount of data, this can easily
+turn out to be a great (and simple) <strong>performance boost for your app</strong>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../howto/multilanguage.html" class="navigation navigation-prev " aria-label="Previous page: Add Multilanguage Support">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="services.html" class="navigation navigation-next " aria-label="Next page: Services">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Reducers","level":"3.1","depth":1,"next":{"title":"Services","level":"3.2","depth":1,"path":"articles/services.md","ref":"./articles/services.md","articles":[]},"previous":{"title":"Add Multilanguage Support","level":"2.9","depth":1,"path":"howto/multilanguage.md","ref":"./howto/multilanguage.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","collapsible-menu"],"pluginsConfig":{"code":{"copyButtons":true},"collapsible-menu":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"articles/reducers.md","mtime":"2018-12-02T10:28:25.798Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-13T14:15:22.454Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

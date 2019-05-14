@@ -1,0 +1,16 @@
+# Ignore generated files
+node_modules
+_book
+
+# Ignore transpilerd files
+lib
+bin
+features
+services
+
+# Negate stuff that we need to keep
+!src-features/**
+!boilerplates/**/features
+!boilerplates/**/services
+!boilerplates/**/lib
+!boilerplates/**/bin

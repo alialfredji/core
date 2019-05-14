@@ -1,0 +1,14 @@
+# Ignore generated files
+package.lock.json
+node_modules
+_book
+
+# Ignore transpilerd files
+lib
+features
+services
+
+# Negate stuff that we need to keep
+!src-features/**
+!src-services/**
+!src-lib/**

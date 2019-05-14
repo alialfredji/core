@@ -1,0 +1,1099 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>splash-screen feature · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ssr.html" />
+    
+    
+    <link rel="prev" href="features-users.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <a target="_blank" href="https://github.com/marcopeg/react-ssr">
+            
+                    
+                    give us a star on GitHub!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <a target="_blank" href="https://www.npmjs.com/package/@marcopeg/react-ssr">
+            
+                    
+                    install from NPM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../api/">
+            
+                <a href="../api/">
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../api/create-ssr-state.html">
+            
+                <a href="../api/create-ssr-state.html">
+            
+                    
+                    createSSRState
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../api/create-ssr-context.html">
+            
+                <a href="../api/create-ssr-context.html">
+            
+                    
+                    createSSRContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../api/create-ssr-render.html">
+            
+                <a href="../api/create-ssr-render.html">
+            
+                    
+                    createSSRRender
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../api/create-ssr-router.html">
+            
+                <a href="../api/create-ssr-router.html">
+            
+                    
+                    createSSRRouter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../api/memcached.html">
+            
+                <a href="../api/memcached.html">
+            
+                    
+                    Memcached
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Step By Step Tutorial</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="setup.html">
+            
+                <a href="setup.html">
+            
+                    
+                    Prerequisites & Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="app.html">
+            
+                <a href="app.html">
+            
+                    
+                    Universal App
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="app-redux.html">
+            
+                <a href="app-redux.html">
+            
+                    
+                    React Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="app-reducers.html">
+            
+                <a href="app-reducers.html">
+            
+                    
+                    Reducers & Initial State
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="features.html">
+            
+                <a href="features.html">
+            
+                    
+                    Think in Features
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.3.1" data-path="features-users.html">
+            
+                <a href="features-users.html">
+            
+                    
+                    users feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.3.2" data-path="features-splash.html">
+            
+                <a href="features-splash.html">
+            
+                    
+                    splash-screen feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="ssr.html">
+            
+                <a href="ssr.html">
+            
+                    
+                    Server Side Rendering
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="ssr-folders.html">
+            
+                <a href="ssr-folders.html">
+            
+                    
+                    Folders structure
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="ssr-babel.html">
+            
+                <a href="ssr-babel.html">
+            
+                    
+                    Babel setup (transpiler)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="ssr-npm-dependencies.html">
+            
+                <a href="ssr-npm-dependencies.html">
+            
+                    
+                    NPM dependencies
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="ssr-npm-scripts.html">
+            
+                <a href="ssr-npm-scripts.html">
+            
+                    
+                    NPM scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="ssr-frontend.html">
+            
+                <a href="ssr-frontend.html">
+            
+                    
+                    the frontend script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" data-path="ssr-backend.html">
+            
+                <a href="ssr-backend.html">
+            
+                    
+                    the backend script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" data-path="ssr-kickoff.html">
+            
+                <a href="ssr-kickoff.html">
+            
+                    
+                    the kickoff scripts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" data-path="ssr-code-splitting.html">
+            
+                <a href="ssr-code-splitting.html">
+            
+                    
+                    code splitting
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="docker.html">
+            
+                <a href="docker.html">
+            
+                    
+                    Deploy with Docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    Add React Router
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="router-setup.html">
+            
+                <a href="router-setup.html">
+            
+                    
+                    basic setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="router-routes.html">
+            
+                <a href="router-routes.html">
+            
+                    
+                    add some routes
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.3" data-path="router-load.html">
+            
+                <a href="router-load.html">
+            
+                    
+                    load stuff
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="seo.html">
+            
+                <a href="seo.html">
+            
+                    
+                    SEO Optimization
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="eslint.html">
+            
+                <a href="eslint.html">
+            
+                    
+                    Customize ESLint
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="graphql.html">
+            
+                <a href="graphql.html">
+            
+                    
+                    Add GraphQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.8.1" data-path="graphql-setup.html">
+            
+                <a href="graphql-setup.html">
+            
+                    
+                    setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.2" data-path="graphql-backend.html">
+            
+                <a href="graphql-backend.html">
+            
+                    
+                    backend
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8.3" data-path="graphql-frontend.html">
+            
+                <a href="graphql-frontend.html">
+            
+                    
+                    frontend
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="multilanguage.html">
+            
+                <a href="multilanguage.html">
+            
+                    
+                    Add Multilanguage Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Articles</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../articles/reducers.html">
+            
+                <a href="../articles/reducers.html">
+            
+                    
+                    Reducers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../articles/services.html">
+            
+                <a href="../articles/services.html">
+            
+                    
+                    Services
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../articles/styled-components.html">
+            
+                <a href="../articles/styled-components.html">
+            
+                    
+                    SSR with Styled Components
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Other Stuff</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../DEVELOPMENT.html">
+            
+                <a href="../DEVELOPMENT.html">
+            
+                    
+                    Development
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >splash-screen feature</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="splash-screen-feature">Splash Screen Feature</h1>
+<blockquote>
+<p>Is any app any good if she doesn&apos;t show a splash screen????  </p>
+</blockquote>
+<p>So let&apos;s kick this out and make our own super-duper splash screen feature.</p>
+<p>I would like this to be a pure <strong>plug and <em>PRAY</em></strong> addon to our app. It should
+start by covering the whole app, and move away after the users finish to load,
+or a loading error occour.</p>
+<p><img src="../images/create-react-app-ssr__feature-splash.png" alt="splash screen feature"></p>
+<h3 id="upside-down">Upside Down</h3>
+<p>For this feature I will use an upside down approach, many refer to it as
+<em>&quot;fake it until you make it&quot;</em>.</p>
+<p>Basically we pretend we have done the feature already, and we start trying to
+use it. We will generate errors and we will do our best to fix it.</p>
+<blockquote>
+<p>We are also going to use a cool new feature in React: <strong>PORTALS</strong><br><a href="https://reactjs.org/docs/portals.html" target="_blank">Have a read about portale before you move on!</a></p>
+</blockquote>
+<h3 id="step-1---lets-use-it">Step 1 - let&apos;s use it</h3>
+<p>So we pretend that the feature exists already. We still need to add it to the
+features manifest of our application and to the main ui.</p>
+<p>Open <code>src/features/index.js</code> and change it to:</p>
+<pre><code>export default [
+    require(&apos;./users&apos;),
+    require(&apos;./splash&apos;),
+]
+</code></pre><p>Then open <code>src/App.js</code> and add the UI component:</p>
+<p>...</p>
+<pre><code>import { Splash } from &apos;./features/splash&apos;
+
+...
+
+class App extends Component {
+    render() {
+        return (
+                ...
+                &lt;Splash /&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+</code></pre><p>That should be enough to generate a good deal of red in your console. But it&apos;s
+not that bad, we obviously need the basic feature&apos;s manifest, and we also need
+a React component named &quot;Splash&quot;.</p>
+<h3 id="step-2---the-features-manifest">Step 2 - the feature&apos;s manifest</h3>
+<p>Create the <code>src/features/splash/index.js</code> manifest:</p>
+<pre><code>export const reducers = {}
+export const services = []
+export const listeners = []
+
+export { default as Splash } from &apos;./Splash.container&apos;
+</code></pre><p>This is a very simple manifest, it exports only a UI component that is supposed
+to show (or hide) the splash screen.</p>
+<p>Let&apos;s move to the next step and see about it!</p>
+<h3 id="step-3---the-ui">Step 3 - the UI</h3>
+<p>Welcome to step n.3, we are going to create 2 files. A container that deals with
+the application state, and a dumb component that only deals with UI.</p>
+<p>This is a pattern that I often suggest to my collaborators because it makes it
+easy to work out components (the dumb ones) in isolation from the rest of the 
+application using tools like <a href="https://react-styleguidist.js.org/" target="_blank">react-styleguidist</a>.</p>
+<p>Let&apos;s start from the simple one and create
+<code>src/features/splash/Splash.component.js</code></p>
+<pre><code>import React from &apos;react&apos;
+
+const style = {
+    position: &apos;fixed&apos;, top: 0, bottom: 0, left: 0, right: 0,
+    display: &apos;flex&apos;, justifyContent: &apos;center&apos;, alignItems: &apos;center&apos;,
+    backgroundColor: &apos;#258cf9&apos;, color: &apos;#fff&apos;,
+}
+
+const Splash = ({ isVisible }) =&gt; isVisible
+    ? &lt;div style={style}&gt;loading...&lt;/div&gt;
+    : null
+
+export default Splash
+</code></pre><p>This is simple enough, it receives one single boolean variable and renders a
+full page div with a solid background.</p>
+<p>Now let&apos;s move into something more spicy and create
+<code>src/features/splash/Splash.container.js</code></p>
+<pre><code>import React from &apos;react&apos;
+import ReactDOM from &apos;react-dom&apos;
+import { connect } from &apos;react-redux&apos;
+import SplashUI from &apos;./Splash.component&apos;
+
+// check on the &quot;splash&quot; availability, this might happen in case you
+// place the &lt;Splash /&gt; ui component, but disable the feature.
+const mapState = state =&gt; state.splash
+    ? state.splash
+    : { isVisible: false }
+
+class Splash extends React.Component {
+    constructor (props) {
+        super(props)
+
+        try {
+            this.target = document.createElement(&apos;div&apos;)
+            document.body.appendChild(this.target)
+        } catch (err) {}
+    }
+
+    render () {
+        return this.target
+            ? ReactDOM.createPortal(&lt;SplashUI {...this.props} /&gt;, this.target)
+            : null
+    }
+}
+
+export default connect(mapState)(Splash)
+</code></pre><p>There is some cool stuff going on here.</p>
+<p><strong>Cool stuff n.1</strong> is the <code>mapState()</code> function where we apply a very little bit of
+logic just to see if a &quot;splash&quot; reducer is available.</p>
+<p>In case it&apos;s not we don&apos;t bother showing anything. This makes our component
+actually independent from the rest of the feature. It will not show, but it
+will not crash either. I think this is quite cool.</p>
+<p><strong>Cool stuff n.2</strong> is the use of the constructor to append a new DOM element
+to the body, that we use in the <code>render()</code> via <em>portal</em> to place our 
+<em>SplashUI</em> component. </p>
+<p>This technique is often used in popups. It&apos;s a cool React API.</p>
+<p><strong>Cool stuff n.3</strong> is the <code>try/catch</code> block. Remember that our ultimate goal is to
+be able to <strong>prerender this app on the server</strong>. In NodeJS there is no DOM so
+<code>document.createElement(&apos;div&apos;)</code> will cause an exception to fire.</p>
+<p>By adding this small wrapper we can provide a component that is resilient to
+SSR... in the way that it will skip rendering itself!</p>
+<h3 id="step-4---the-reducer">Step 4 - the reducer</h3>
+<p>Even if we saw that we can survive without a reducer, it might be a good idea
+to provide one so that the real behavior can take place.</p>
+<p>Create <code>src/features/splash/splash.reducer.js</code>:</p>
+<pre><code>export const initialState = {
+    ctime: new Date(),
+    minDelay: 750,
+    maxDelay: 2000,
+    isVisible: true,
+}
+
+/**
+* Actions
+*/
+
+export const SET_HIDDEN = &apos;setHidden@splash&apos;
+
+export const setHidden = () =&gt; ({
+    type: SET_HIDDEN,
+})
+
+/**
+* Handlers
+*/
+
+export const actionHandlers = {
+    [SET_HIDDEN]: (state) =&gt; ({
+        ...state,
+        isVisible: false,
+    }),
+}
+
+export default (state = initialState, action) =&gt; {
+    const handler = actionHandlers[action.type]
+    return handler ? handler(state, action) : state
+}
+</code></pre><p>And register it in your feature&apos;s manifest <code>src/features/splash/index.js</code>:</p>
+<pre><code>import splash from &apos;./splash.reducer&apos;
+
+...
+
+export const reducers = { splash }
+</code></pre><p>The <code>isVisible</code> property is quite obvious. It determins whether the SplashUI will
+cover our app viewport or not. But what about the rest?</p>
+<p><code>ctime</code>, <code>minDelay</code> and <code>maxDelay</code> are utility properties that will help us
+improve our user experiece. It all happens in the service.</p>
+<h3 id="step-5---the-service">Step 5 - the service</h3>
+<p>Create <code>src/features/splash/splash.service.js</code>:</p>
+<pre><code>import { setHidden } from &apos;./splash.reducer&apos;
+
+// last the SplashScreen for a minimum amoun of time
+// (defined in the reducer) so to avoid a fast flickering 
+// effect that would produce discomfort to the user.
+export const hide = () =&gt; (dispatch, getState) =&gt; {
+    const { ssr, splash } = getState()
+
+    if (ssr.isServer()) {
+        dispatch(setHidden())
+        return
+    }
+
+    const loadTime = new Date() - splash.ctime
+    const delay = loadTime &gt; splash.minDelay ? 0 : splash.minDelay - loadTime
+    setTimeout(() =&gt; dispatch(setHidden()), delay)
+}
+
+// safety check, in case the listener don&apos;t fire we can simply
+// hide the loading after a while.
+export const start = () =&gt; (dispatch, getState) =&gt; {
+    const { ssr, splash } = getState()
+
+    if (ssr.isServer()) {
+        dispatch(setHidden())
+        return
+    }
+
+    setTimeout(() =&gt; {
+        dispatch(setHidden())
+    }, splash.maxDelay)
+}
+</code></pre><p>And register it in your feature&apos;s manifest <code>src/features/splash/index.js</code>:</p>
+<pre><code>import * as splashService from &apos;./splash.service&apos;
+
+...
+
+export const services = [ splashService ]
+</code></pre><p>If you are courious and want to better understan the idea behind the word
+&quot;service&quot;, <a href="../articles/services.html">please have a read here</a>. But the super
+short version is that <strong>a service is a redux action that may fail</strong>.</p>
+<p>That&apos;s why you see those <code>try/catch</code> in this piece of code. Here we might
+face a particular condition in which our code can fail:</p>
+<p>Our service depends on 2 reducers: <code>splash</code> and <code>users</code>. The latter is
+provided by a different feature and we have no control over it. As we want this
+feature to be &quot;plug and play&quot; we need to be sure that we don&apos;t implement
+hard dependencies on external resources.</p>
+<p>When it come sto the two methods, they both try to hide the splash screen.</p>
+<h4 id="hide">hide()</h4>
+<p><code>hide()</code> implements a trick so to be sure that the splash screen will be visible
+for at least <code>minDelay</code> time. This is so to avoid a flickering effect if the
+loading time is too fast. Yes you hear me: we slow down things to so make 
+a better UX.</p>
+<blockquote>
+<p>But in case we are rendering this thing on the server we don&apos;t want to wait
+anything because the full loaded content will be served to the user anyway.</p>
+</blockquote>
+<h4 id="start">start()</h4>
+<p><code>start()</code> implements a fallback in case <code>hide()</code> is never called. After
+<code>maxDelay</code> is passed, we wil close the curtain anyway. This also need to be
+disabled in the server. No need for it.</p>
+<p><code>start()</code> is a <strong>service lifecycle method</strong>. It&apos;s been called at boot time.
+<a href="../articles/services.html">You can find more informations here</a></p>
+<p><strong>NOTE:</strong> there is no place in which we call <code>hide()</code> so far. How does that work?
+You are going to find it out in the next and last step of this guide!</p>
+<h3 id="step-6---the-listener">Step 6 - the listener</h3>
+<p>Let&apos;s first dive into the code and then explain what is going on. Create
+<code>src/features/splash/splash.listener.js</code>:</p>
+<pre><code>import { hide } from &apos;./splash.service&apos;
+
+export default [
+    {
+        type: &apos;loadEnd@users&apos;,
+        handler: () =&gt; dispatch =&gt; dispatch(hide()),
+    },
+    {
+        type: &apos;loadFailed@users&apos;,
+        handler: () =&gt; dispatch =&gt; dispatch(hide()),
+    },
+]
+</code></pre><p>And register it in your feature&apos;s manifest <code>src/features/splash/index.js</code>:</p>
+<pre><code>import splashListener from &apos;./splash.listener&apos;
+
+...
+
+export const listeners = [ splashListener ]
+</code></pre><p>Our state manager implements
+<a href="https://www.npmjs.com/package/redux-events-middleware" target="_blank">redux-events-middleware</a>
+which is a super simple implementaiton of an <em>event emitter</em> based on Redux
+actions.</p>
+<p>This file that you just created exposes a list of listeners. Each listener
+hook up to a redux action type and provides a &quot;what to do&quot; in the form of
+a handler function.</p>
+<p>Here we are simply listening for events from the users feature, and we want to
+attach a side effect of hiding the splash screen.</p>
+<p><strong> What, do you use strings as action types???</strong></p>
+<p>Fair question. Everywhere in the net you can read that is a best practice to
+store action types in constants so to mitigate a misspell bug. And I couldn&apos;t
+agree more. In fact we do rightly so in all our reducers.</p>
+<p>But here we want to <strong>implement a soft dependency</strong> between our &quot;splash&quot; feature
+and the &quot;users&quot; feature. &quot;splash&quot; is aware of what &quot;users&quot; can do, but not the
+other way around.</p>
+<p>If we have &quot;users&quot; to export her actions, so that &quot;splash&quot; can import it, this
+will make &quot;users&quot; a hard dependency of &quot;splash&quot;.</p>
+<p><strong>NOTE:</strong> If you are in full control of the features of your application, the
+hard dependency is actually the best way to go because you rely on the
+interpreter to trigger exceptions in the console. Everything is easier.</p>
+<blockquote>
+<p>In this specific guide I&apos;m just showing a possibility to use listeners to
+implement a plug&apos;n play feature.</p>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="features-users.html" class="navigation navigation-prev " aria-label="Previous page: users feature">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ssr.html" class="navigation navigation-next " aria-label="Next page: Server Side Rendering">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"splash-screen feature","level":"2.2.3.2","depth":3,"next":{"title":"Server Side Rendering","level":"2.3","depth":1,"path":"howto/ssr.md","ref":"./howto/ssr.md","articles":[{"title":"Folders structure","level":"2.3.1","depth":2,"path":"howto/ssr-folders.md","ref":"./howto/ssr-folders.md","articles":[]},{"title":"Babel setup (transpiler)","level":"2.3.2","depth":2,"path":"howto/ssr-babel.md","ref":"./howto/ssr-babel.md","articles":[]},{"title":"NPM dependencies","level":"2.3.3","depth":2,"path":"howto/ssr-npm-dependencies.md","ref":"./howto/ssr-npm-dependencies.md","articles":[]},{"title":"NPM scripts","level":"2.3.4","depth":2,"path":"howto/ssr-npm-scripts.md","ref":"./howto/ssr-npm-scripts.md","articles":[]},{"title":"the frontend script","level":"2.3.5","depth":2,"path":"howto/ssr-frontend.md","ref":"./howto/ssr-frontend.md","articles":[]},{"title":"the backend script","level":"2.3.6","depth":2,"path":"howto/ssr-backend.md","ref":"./howto/ssr-backend.md","articles":[]},{"title":"the kickoff scripts","level":"2.3.7","depth":2,"path":"howto/ssr-kickoff.md","ref":"./howto/ssr-kickoff.md","articles":[]},{"title":"code splitting","level":"2.3.8","depth":2,"path":"howto/ssr-code-splitting.md","ref":"./howto/ssr-code-splitting.md","articles":[]}]},"previous":{"title":"users feature","level":"2.2.3.1","depth":3,"path":"howto/features-users.md","ref":"./howto/features-users.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["code","collapsible-menu"],"pluginsConfig":{"code":{"copyButtons":true},"collapsible-menu":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"howto/features-splash.md","mtime":"2018-12-22T15:11:56.206Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-13T14:15:22.454Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
