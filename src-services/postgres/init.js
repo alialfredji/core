@@ -1,5 +1,5 @@
 import Sequelize from 'sequelize'
-import { logInfo, logDebug } from '@marcopeg/utils/services/logger'
+import { logInfo, logDebug } from '@marcopeg/utils/lib/logger'
 import { addHandler } from './conn'
 
 export default (config) => {
