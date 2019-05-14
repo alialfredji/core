@@ -1,7 +1,6 @@
 # Ignore generated files
 package.lock.json
 node_modules
-_book
 
 # Ignore transpilerd files
 lib

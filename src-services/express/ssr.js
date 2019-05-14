@@ -1,4 +1,4 @@
-import { createSSRRouter } from '@marcopeg/react-ssr/lib/create-ssr-router'
+import { createSSRRouter } from '@forrestjs/core/lib/create-ssr-router'
 import { EXPRESS_ROUTE, EXPRESS_SSR } from './hooks'
 
 export const register = ({ registerAction, createHook }) =>

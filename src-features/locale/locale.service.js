@@ -1,5 +1,5 @@
-import { runQuery } from '@marcopeg/react-ssr/features/network'
-import { cookie, localStorage } from '@marcopeg/react-ssr/features/storage'
+import { runQuery } from '@forrestjs/core/features/network'
+import { cookie, localStorage } from '@forrestjs/core/features/storage'
 import localeQuery from './locale.query'
 import { addLocale, setLocale } from './locale.reducer'
 
