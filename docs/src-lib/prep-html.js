@@ -23,7 +23,7 @@ const prepHTML = (template, {
     // avoid to send out the redux state if client js is disabled
     if (disableJs !== 'yes') {
         // eslint-disable-next-line
-        data = data.replace('<div id="root"></div>', `<div id="root"></div><script>window.__REDUX_INITIAL_STATE__ = ${JSON.stringify(state)};</script>`)
+        data = data.replace('<div id="root"></div>', `<div id="root"></div><script>window.SERVER_DATA = ${JSON.stringify(state)};</script>`)
     }
 
     // react-loadable -- inject chunks

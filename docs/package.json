@@ -1,7 +1,7 @@
 {
-  "name": "@marcopeg/react-ssr",
-  "version": "0.3.3",
-  "description": "Server Side Rendering for CRA 2.x (with redux, router, code splitting, ...)",
+  "name": "@forrestjs/core",
+  "version": "0.0.1",
+  "description": "SSR utilities for CRA2.x",
   "main": "index.js",
   "scripts": {
     "go": "npm run build && npm publish --access public .",
@@ -16,9 +16,9 @@
     "start:features": "node_modules/babel-cli/bin/babel.js --watch src-features --out-dir features",
     "start": "./node_modules/.bin/concurrently \"npm run start:lib\" \"npm run start:services\" \"npm run start:features\"",
     "----- // START:TO // -----": "",
-    "start:to:lib": "node_modules/babel-cli/bin/babel.js --watch src-lib --out-dir \"$TARGET\"/node_modules/@marcopeg/react-ssr/lib",
-    "start:to:services": "node_modules/babel-cli/bin/babel.js --watch src-services --out-dir \"$TARGET\"/node_modules/@marcopeg/react-ssr/services",
-    "start:to:features": "node_modules/babel-cli/bin/babel.js --watch src-features --out-dir \"$TARGET\"/node_modules/@marcopeg/react-ssr/features",
+    "start:to:lib": "node_modules/babel-cli/bin/babel.js --watch src-lib --out-dir \"$TARGET\"/node_modules/@forrestjs/core/lib",
+    "start:to:services": "node_modules/babel-cli/bin/babel.js --watch src-services --out-dir \"$TARGET\"/node_modules/@forrestjs/core/services",
+    "start:to:features": "node_modules/babel-cli/bin/babel.js --watch src-features --out-dir \"$TARGET\"/node_modules/@forrestjs/core/features",
     "start:to": "./node_modules/.bin/concurrently \"npm run start:to:lib\" \"npm run start:to:services\" \"npm run start:to:features\"",
     "----- // GITBOOK // -----": "",
     "book:install": "node_modules/.bin/gitbook install",
@@ -45,12 +45,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcopeg/react-ssr.git"
+    "url": "git+https://github.com/forrestjs/core.git"
   },
   "author": "Marco Pegoraro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcopeg/react-ssr/issues"
+    "url": "https://github.com/forrestjs/core/issues"
   },
   "homepage": "https://marcopeg.github.io/react-ssr/",
   "keywords": [

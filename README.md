@@ -1,8 +1,8 @@
-# react-ssr
+# @ForrestJS/core
 
 Hey mate, thank you for landing here!
 
-> `react-ssr` helps you to setup a 
+> ForrestJS helps you to setup a 
 > **universal progressive web application**
 > based on the NodeJS/React stack.
 
@@ -52,7 +52,7 @@ This package is quite stable. Yet, I'm till actively working on it and you can
 expect new features and **slight changes in the apis**.
 
 Nevertheless I'm already using it in production, and I know few friends who are
-trusting `react-ssr` (and me, thanks mates 🙏) for their projects in production.
+trusting _ForrestJS_ (and me, thanks mates 🙏) for their projects in production.
 
 I commit to do my best in preserving backward compatibility and keep it up-to-date
 with new versions of the few dependencies that we use.
@@ -85,8 +85,8 @@ you have a basic understanding of how to use them.
 ## Table of Contents
 
 * [Introduction](README.md)
-* [give us a star on GitHub!](https://github.com/marcopeg/react-ssr)
-* [install from NPM](https://www.npmjs.com/package/@marcopeg/react-ssr)
+* [give us a star on GitHub!](https://github.com/forrestjs/core)
+* [install from NPM](https://www.npmjs.com/package/@forrestjs/core)
 * [API](./api/README.md)
     * [createSSRState](./api/create-ssr-state.md)
     * [createSSRContext](./api/create-ssr-context.md)
